@@ -12,14 +12,14 @@
         width: 300px;
         animation: color 4s ease-in-out infinite;
       }
-     
+
       .item {
         background-color: green;
         height: 50%;
         width: 50%;
         animation: left-to-right 4s ease-in infinite alternate;
       }
-      .container:hover .item .container{
+      .container:hover .item .container {
       }
       @keyframes left-to-right {
         0% {
@@ -38,20 +38,22 @@
         }
       }
       @keyframes color {
-          0% {
-              background-color: blue;
-          }
-          100%{
-              background-color: azure;
-          }
-         
-          
+        0% {
+          background-color: blue;
+        }
+        100% {
+          background-color: azure;
+        }
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="item" onclick="location.href='index.html';" style="cursor: pointer;"> </div>
+      <div
+        class="item"
+        onclick="location.href='index.html';"
+        style="cursor: pointer"
+      ></div>
     </div>
   </body>
 </html>
