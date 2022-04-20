@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        background-color: grey;
+        height: 300px;
+        width: 300px;
+      }
+      .item {
+        background-color: rgb(119, 198, 125);
+        height: 50%;
+        width: 50%;
+        transition: 2s;
+        border-radius: 10px;
+        animation: left-to-right 1s ease-in infinite alternate;
+      }
+      
+      .container:hover .item {
+        transform: translateX(100%);
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-top: 100px solid rgb(255, 136, 0);
+        border-radius: 25%;
+        background-color: aqua;
+        box-shadow: 2px 2px 10px black;
+        margin: 0 auto;
+      }
+      .item2 {
+        background-color: rgb(212, 1, 1);
+        height: 50%;
+        width: 50%;
+        transition: 2s;
+        border-radius: 10px;
+      }
+      .container:hover .item2 {
+        transform: translateX(100%);
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 100px solid red;
+        border-radius: 25%;
+        background-color: rgb(0, 136, 255);
+        box-shadow: 2px 2px 10px black;
+        margin: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container"</div>
+      <div class="item"></div>
+      <div class="item2"></div>
+    </div>
+  </body>
+</html>

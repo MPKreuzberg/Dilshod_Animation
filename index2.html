@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        background-color: grey;
+        height: 300px;
+        width: 300px;
+        animation: color 4s ease-in-out infinite;
+      }
+     
+      .item {
+        background-color: green;
+        height: 50%;
+        width: 50%;
+        animation: left-to-right 4s ease-in infinite alternate;
+      }
+      .container:hover .item .container{
+      }
+      @keyframes left-to-right {
+        0% {
+          transform: translateX(0);
+        }
+        33% {
+          transform: translateY(100%);
+          background-color: blue;
+        }
+        66% {
+          transform: translateX(100%) translateY(100%);
+          background-color: aqua;
+        }
+        100% {
+          transform: translateX(100%);
+        }
+      }
+      @keyframes color {
+          0% {
+              background-color: blue;
+          }
+          100%{
+              background-color: azure;
+          }
+         
+          
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item" onclick="location.href='index.html';" style="cursor: pointer;"> </div>
+    </div>
+  </body>
+</html>
